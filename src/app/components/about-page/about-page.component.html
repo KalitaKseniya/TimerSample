@@ -1,0 +1,14 @@
+<h1>about-page</h1>
+
+<button style="float:right;" class="btn btn-dark" (click)="onClick('about')">
+    Launch timer
+</button>
+
+<div style="float:right; margin-left:10px;">
+    <button (click)="resetTimer()" class="btn btn-danger">Reset</button>
+</div>
+
+<div style="float:right;">
+    <label>Seconds </label>
+    <input type="number" [(ngModel)]="timerService.seconds" min="1" class="form-control">
+</div>
